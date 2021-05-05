@@ -1,8 +1,7 @@
 {
-    "name": "joisarjignesh/bigbluebutton",
+    "name": "ibondoc/bigbluebutton",
     "description": "BigBlueButton Server API Library for Laravel",
     "keywords": [
-        "joisarjignesh",
         "bigbluebutton",
         "api",
         "bbb",
@@ -12,17 +11,9 @@
         "laravel",
         "php"
     ],
-    "homepage": "https://github.com/joisarjignesh/bigbluebutton",
+    "homepage": "https://github.com/ibondoc/bigbluebutton",
     "license": "MIT",
     "type": "library",
-    "authors": [
-        {
-            "name": "Jignesh Joisar",
-            "email": "jigneshjoisar@gmail.com",
-            "homepage": "https://jigneshjoisar.web.app",
-            "role": "Developer"
-        }
-    ],
     "require": {
         "php": ">=7.0",
         "illuminate/support": "^5.5|^6.0|^7.0|^8.0",
@@ -34,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "JoisarJignesh\\Bigbluebutton\\": "src/"
+            "ibondoc\\Bigbluebutton\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -42,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "JoisarJignesh\\Bigbluebutton\\Tests\\": "tests/"
+            "ibondoc\\Bigbluebutton\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -54,18 +45,13 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "support": {
-        "source": "https://github.com/joisarjignesh/bigbluebutton",
-        "issues": "https://github.com/joisarjignesh/bigbluebutton/issues",
-        "docs": "https://github.com/joisarjignesh/bigbluebutton/blob/master/README.md"
-    },
     "extra": {
         "laravel": {
             "providers": [
-                "JoisarJignesh\\Bigbluebutton\\BigbluebuttonServiceProvider"
+                "ibondoc\\Bigbluebutton\\BigbluebuttonServiceProvider"
             ],
             "aliases": {
-                "Bigbluebutton": "JoisarJignesh\\Bigbluebutton\\Facades\\Bigbluebutton"
+                "Bigbluebutton": "ibondoc\\Bigbluebutton\\Facades\\Bigbluebutton"
             }
         }
     }
