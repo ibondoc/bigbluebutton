@@ -32,6 +32,7 @@ trait InitMeeting
         $meetingParams->setDuration($request->get('duration', config('bigbluebutton.create.duration', 0)));
         $meetingParams->setRecord($request->get('record', config('bigbluebutton.create.record', false)));
         $meetingParams->setMaxParticipants($request->get('maxParticipants', config('bigbluebutton.create.maxParticipants', 0)));
+        $meetingParams->setGuestPolicy("ASK_MODERATOR");
         $meetingParams->setLogoutUrl($request->get('logoutUrl', config('bigbluebutton.create.logoutUrl', null)));
         $meetingParams->setWelcomeMessage(
             $request->get('welcomeMessage', config('bigbluebutton.create.welcomeMessage', null))
