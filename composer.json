@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ibondoc\\Bigbluebutton\\": "src/"
+            "JoisarJignesh\\Bigbluebutton\\": "src/"
         },
         "files": [
             "src/helpers.php"
@@ -33,7 +33,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "ibondoc\\Bigbluebutton\\Tests\\": "tests/"
+            "JoisarJignesh\\Bigbluebutton\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -48,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ibondoc\\Bigbluebutton\\BigbluebuttonServiceProvider"
+                "JoisarJignesh\\Bigbluebutton\\BigbluebuttonServiceProvider"
             ],
             "aliases": {
-                "Bigbluebutton": "ibondoc\\Bigbluebutton\\Facades\\Bigbluebutton"
+                "Bigbluebutton": "JoisarJignesh\\Bigbluebutton\\Facades\\Bigbluebutton"
             }
         }
     }
